@@ -2,25 +2,139 @@
 <html>
 <head>
 <title>Welcome to the GitHub of Harrison Schaen</title>
-<style type="text/css">
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size:16px;
-}
-p {
-    font-size: 1em;
-}
-</style>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
 </head>
 <body>
     <!-- Start adding some content -->
-<div><h1>Hello, I'm Harrison Schaen</h1></div>
-<div><h2>This is my Github Homepage</h2></div>
-<div><p>Here is where I will post all of my future <a href="https://github.com" alt="GitHub">GitHub</a> Repositories.</p></div>
-<div><ul><li>Prework About Me <a href="https://github.com/hschaen/prework-about-me" alt="Prework About Me on GitHub">GitHub</a> <a href="https://hschaen.github.io/prework-about-me/" alt="Prework About Me on GitHub Pages">Page</a></li>
-<li>Repo 2</li>
-<li>Repo 3</li>
-</ul>
-</div>
+    <div class="main-content">
+        <!-- nav-->
+
+        
+        <main class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Harrison Schaen</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+            <header class="row">
+                <div class="col-sm-12">
+                    <div class="jumbotron">
+                        <h1 class="display-4" id="greeting">Hello, </h1>
+                        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+                        <hr class="my-4">
+                        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                    </div>
+                </div>
+            </header>
+            <div class="row">
+                <div id="cards">
+                    <div class="col-sm-6 col-md-4">
+                        
+                        <div class="card">
+                            <div class="card-header">
+                                Featured
+                            </div>
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card">
+                            <div class="card-header">
+                                Featured
+                            </div>
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4">
+                        <div class="card"">
+                            <div class="card-header">
+                                Featured
+                            </div>
+                            <img src="..." class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item">Cras justo odio</li>
+                                <li class="list-group-item">Dapibus ac facilisis in</li>
+                                <li class="list-group-item">Vestibulum at eros</li>
+                            </ul>
+                            <div class="card-body">
+                                <a href="#" class="card-link">Card link</a>
+                                <a href="#" class="card-link">Another link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script type="text/javascript">
+        var name, client,showIt;
+        client = confirm("Do you want to pay for help with a project?");
+        name = (client === true) ? prompt("What's your name?"):"";
+        showIt = (client === true) ? (document.getElementById("cards").style.display = 'inherit',  document.getElementById("greeting").innerHTML = "Hello, " + name) : (document.getElementById("cards").style.display = 'none', document.getElementById("greeting").innerHTML = "Hi, I'm Harrison");
+    
+        window.onload = function () {
+            var projectTypes, typeOfProject, goodFit;
+            projectTypes = ["website", "application", "mobile app", "blog", "marketing", "design", "wireframes", "native app", "iphone", "android"];
+            typeOfProject = (client === true) ? prompt("What type of project are you looking for?") : "";
+            // if client fills out type of project then determine if we do that or not
+            if((client) === false) {
+
+            } else {
+                (projectTypes.indexOf(typeOfProject.toLowerCase()) === -1) ? alert("Sorry, We don't do that here") + (document.getElementById("cards").style.display = 'none') : alert("Alright! You are in great hands")
+            };
+
+
+        }
+    </script>
 </body>
 </html>
