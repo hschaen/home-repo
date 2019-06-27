@@ -117,24 +117,24 @@
         </main>
     </div>
     <script type="text/javascript">
-        var name, client,showIt;
-        client = confirm("Do you want to pay for help with a project?");
-        name = (client === true) ? prompt("What's your name?"):"";
-        showIt = (client === true) ? (document.getElementById("cards").style.display = 'inherit',  document.getElementById("greeting").innerHTML = "Hello, " + name) : (document.getElementById("cards").style.display = 'none', document.getElementById("greeting").innerHTML = "Hi, I'm Harrison");
+        // var name, client,showIt;
+        // client = confirm("Do you want to pay for help with a project?");
+        // name = (client === true) ? prompt("What's your name?"):"";
+        // showIt = (client === true) ? (document.getElementById("cards").style.display = 'inherit',  document.getElementById("greeting").innerHTML = "Hello, " + name) : (document.getElementById("cards").style.display = 'none', document.getElementById("greeting").innerHTML = "Hi, I'm Harrison");
     
-        window.onload = function () {
-            var projectTypes, typeOfProject, goodFit;
-            projectTypes = ["website", "application", "mobile app", "blog", "marketing", "design", "wireframes", "native app", "iphone", "android"];
-            typeOfProject = (client === true) ? prompt("What type of project are you looking for?") : "";
-            // if client fills out type of project then determine if we do that or not
-            if((client) === false) {
+        // window.onload = function () {
+        //     var projectTypes, typeOfProject, goodFit;
+        //     projectTypes = ["website", "application", "mobile app", "blog", "marketing", "design", "wireframes", "native app", "iphone", "android"];
+        //     typeOfProject = (client === true) ? prompt("What type of project are you looking for?") : "";
+        //     // if client fills out type of project then determine if we do that or not
+        //     if((client) === false) {
 
-            } else {
-                (projectTypes.indexOf(typeOfProject.toLowerCase()) === -1) ? alert("Sorry, We don't do that here") + (document.getElementById("cards").style.display = 'none') : alert("Alright! You are in great hands")
-            };
+        //     } else {
+        //         (projectTypes.indexOf(typeOfProject.toLowerCase()) === -1) ? alert("Sorry, We don't do that here") + (document.getElementById("cards").style.display = 'none') : alert("Alright! You are in great hands")
+        //     };
 
 
-        }
+        // }
     </script>
 </body>
 </html>
