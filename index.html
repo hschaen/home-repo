@@ -123,10 +123,14 @@
                     <header>
                         <h1>Contact Me</h1>
                     </header>
-                    <form action="https://formspree.io/hschaen@gmail.com" method="POST">
+                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/hschaen@gmail.com" method="POST">
                         <div class="form-group">
-                            <label for="exampleFormControlInput1">Email address</label>
-                            <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com" name="email">
+                            <fieldset id="fs-frm-inputs">
+                                <label for="full-name">Full Name</label>
+                                <input type="texy" class="form-control" id="fullName" placeholder="Your Name" name="name" id="full-name required">
+
+                            <label for="email-address">Email address</label>
+                            <input type="email" class="form-control" id="emailAddress" placeholder="email@domain.tld" name="_replyto" id="email-address" required>
                         </div>
                         <!-- <div class="form-group">
                             <label for="exampleFormControlSelect1">Example select</label>
@@ -149,9 +153,10 @@
                             </select>
                         </div> -->
                         <div class="form-group">
-                            <label for="exampleFormControlTextarea1">Message</label>
-                            <textarea class="form-control" id="message" rows="3" name="message"></textarea>
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3" name="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
                         </div>
+                        <input type="hidden" name="_subject" id="email-subject" value="hschaen.github.io Contact Form Submission">
                         <input type="submit" class="btn btn-primary mb-2" value="Send">
                     </form>
                 </div>
