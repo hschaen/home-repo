@@ -5,56 +5,57 @@
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<script src="https://kit.fontawesome.com/a92c4ba27e.js"></script>
+
 </head>
 <body>
-    <!-- Start adding some content -->
-    <div class="main-content">
-        <!-- nav-->
-
-        
-        <main class="container">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="#">Harrison Schaen</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                    </li>
-                    </ul>
-                </div>
-            </nav>
-            <header class="row">
-                <div class="col-sm-12">
-                    <div class="jumbotron">
-                        <h1 class="display-4" id="greeting">Hi, I'm Harrison</h1>
-                        <p class="lead">This my portfolio page. Thanks for coming.</p>
-                        <hr class="my-4">
-                        <p>I created this page so that you can check out some of my work. If you have any questions go ahead and shoot me a message.</p>
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Contact Me</a>
-                    </div>
-                </div>
-            </header>
-            <div class="row" id="cards">
-                <div class="col-sm-12">
-                    <header>
-                        <h1>Projects</h1>
-                    </header>
+    <!-- Start adding some content -->    
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Harrison Schaen</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+        <main class="row" id="intro">
+            <div class="col-sm-12">
+                <div class="jumbotron">
+                    <h1 class="display-4" id="greeting">Hi, I'm Harrison</h1>
+                    <p class="lead">This my portfolio page. Thanks for coming.</p>
+                    <hr class="my-4">
+                    <p>I created this page so that you can check out some of my work. If you have any questions go ahead and shoot me a message.</p>
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Contact Me</a>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-4">
+        </main>
+        <section class="row" id="projects">
+            <aside class="col-md-3 col-sm-12" id="projectdNav">
+                <ul>
+                    <li><a href="#">Games</a></li>
+                    <li><a href="#">Misc.</a></li>
+                </ul>
+            </aside>
+            <div class="col-md-9 col-sm-12" id="projectCards">
+                <header class="col-sm-12" id="projectHeader">
+                    <h1>Projects</h1>
+                </header>
+                <div class="project col-sm-6 col-md-4">
                     <div class="card">
                         <div class="card-header">
                             Featured
@@ -75,7 +76,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                <div class="project col-sm-6 col-md-4">
                     <div class="card">
                         <div class="card-header">
                             Featured
@@ -96,7 +97,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4">
+                <div class="project col-sm-6 col-md-4">
                     <div class="card">
                         <div class="card-header">
                             Featured
@@ -118,54 +119,106 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-sm-12">
-                    <header>
-                        <h1>Contact Me</h1>
-                    </header>
-                    <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/hschaen@gmail.com" method="POST">
-                        <fieldset id="fs-frm-inputs">
-                            <div class="form-group">
-                            
-                                <label for="full-name">Full Name</label>
-                                <input type="texy" class="form-control" id="fullName" placeholder="Your Name" name="name" id="full-name required">
-                            
-                            </div>
-                            <div class="form-group">
-                                <label for="email-address">Email address</label>
-                                <input type="email" class="form-control" id="emailAddress" placeholder="email@domain.tld" name="_replyto" id="email-address" required>
-                            </div>
-                        <!-- <div class="form-group">
-                            <label for="exampleFormControlSelect1">Example select</label>
-                            <select class="form-control" id="exampleFormControlSelect1">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
+        </section>
+        <section class="row" id="contactForm">
+            <div class="col-sm-12">
+                <header>
+                    <h1>Contact Me</h1>
+                </header>
+                <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/hschaen@gmail.com" method="POST">
+                    <fieldset id="fs-frm-inputs">
+                        <div class="form-group">
+                        
+                            <label for="full-name">Full Name</label>
+                            <input type="texy" class="form-control" id="fullName" placeholder="Your Name" name="name" id="full-name required">
+                        
                         </div>
-                        <!-- <div class="form-group">
-                            <label for="exampleFormControlSelect2">Example multiple select</label>
-                            <select multiple class="form-control" id="exampleFormControlSelect2">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
-                            </select>
-                        </div> -->
-                            <div class="form-group">
-                            <label for="message">Message</label>
-                            <textarea class="form-control" id="message" rows="3" name="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
-                            </div>
-                        </fieldset>
-                        <input type="hidden" name="_subject" id="email-subject" value="hschaen.github.io Contact Form Submission">
-                        <input type="submit" class="btn btn-primary mb-2" value="Send">
-                    </form>
+                        <div class="form-group">
+                            <label for="email-address">Email address</label>
+                            <input type="email" class="form-control" id="emailAddress" placeholder="email@domain.tld" name="_replyto" id="email-address" required>
+                        </div>
+                    <!-- <div class="form-group">
+                        <label for="exampleFormControlSelect1">Example select</label>
+                        <select class="form-control" id="exampleFormControlSelect1">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div>
+                    <!-- <div class="form-group">
+                        <label for="exampleFormControlSelect2">Example multiple select</label>
+                        <select multiple class="form-control" id="exampleFormControlSelect2">
+                            <option>1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                            <option>5</option>
+                        </select>
+                    </div> -->
+                        <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea class="form-control" id="message" rows="3" name="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+                        </div>
+                    </fieldset>
+                    <input type="hidden" name="_subject" id="email-subject" value="hschaen.github.io Contact Form Submission">
+                    <input type="submit" class="btn btn-primary mb-2" value="Send">
+                </form>
+            </div>
+        </section>
+        <footer class="row card-footer">
+            <div class="col-sm-12">
+                <div class="row">
+                    <div class="col-sm-9 text-left">
+                        <div class="py-3" id="siteLogo">
+                            <h1>Harrison Schaen</h1>
+                        </div>
+                    </div>
+                    
+                    <div class="col-sm-3 text-right d-table-cell">
+                        <div id="socialLinks">
+                            <span class="">Contact Me</span>
+                            <ul class="list-inline">
+                                <li class="list-inline-item">
+                                    <!-- LinkedIn -->
+                                    <a href="https://linkedin.com/in/harrisonschaen" title="Harrison Schaen on LinkedIn" alt="Harrison Schaen on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <!-- Twitter -->
+                                    <a href="https://twiiter.com/in/harrisonschaen" title="Harrison Schaen on Twiiter" alt="Harrison Schaen on Twiiter"><i class="fab fa-twitter-square"></i></a>
+
+                                </li>
+                                <li class="list-inline-item">
+                                    <!-- Instagram -->
+                                    <a href="https://instagram.com/in/harrisonschaen" title="Harrison Schaen on Instagram" alt="Harrison Schaen on Instagram"><i class="fab fa-instagram"></i></a>
+
+                                </li>
+                                <li class="list-inline-item">
+                                    <!-- Facebook -->
+                                    <a href="https://fb.me/harrisonschaen" title="Harrison Schaen on Facebook" alt="Harrison Schaen on Facebook"><i class="fab fa-facebook-square"></i></a>
+
+                                </li>
+                                <li class="list-inline-item">
+                                    
+                                        <!-- GitHub -->
+                                    <a href="https://github.com/in/hschaen" title="Harrison Schaen on Github" alt="Harrison Schaen on GitHub"><i class="fab fa-github-square"></i></a>
+
+                                </li>
+                                <li class="list-inline-item">
+                                    <!-- Email -->
+                                    <a href="https://linkedin.com/in/harrisonschaen" title="Harrison Schaen on Email" alt="Harrison Schaen on Email"><i class="fas fa-envelope"></i></a>
+
+                                </li>
+                            </ul>
+                            <div id="copyright">
+                                    <span class="align-middle">&copy; 2019 Harrison Schaen</span>
+                                </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </main>
+        </footer>
     </div>
     <script type="text/javascript">
         // var name, client,showIt;
