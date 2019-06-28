@@ -44,80 +44,48 @@
                 </div>
             </div>
         </main>
-        <section class="row" id="projects">
-            <aside class="col-md-3 col-sm-12" id="projectdNav">
-                <ul>
-                    <li><a href="#">Games</a></li>
-                    <li><a href="#">Misc.</a></li>
-                </ul>
-            </aside>
-            <div class="col-md-9 col-sm-12" id="projectCards">
-                <header class="col-sm-12" id="projectHeader">
-                    <h1>Projects</h1>
-                </header>
-                <div class="project col-sm-6 col-md-4">
-                    <div class="card">
-                        <div class="card-header">
-                            Featured
-                        </div>
-                        <!-- <img src="..." class="card-img-top" alt="..."> -->
-                        <div class="card-body">
-                            <h5 class="card-title">RSP Game</h5>
-                            <p class="card-text">Rock, Paper, Scissors game with sprites, JS logic, and Bootstrap styles</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">JavaScript logic</li>
-                            <li class="list-group-item">Bootstrap 4</li>
-                            <li class="list-group-item">Sprites</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="https://hschaen.github.io/rock-paper-scissors/" class="card-link">Play</a>
-                            <a href="https://github.com/hschaen/rock-paper-scissors" class="card-link">Repo</a>
+        <section id="projects">
+            <div class="row">
+                <div class="col-sm-12">
+                    <header class="col-sm-12" id="projectHeader">
+                            <h1>Projects</h1>
+                    </header>
+                </div>
+            </div>
+            <div class="row">
+                <aside class="col-md-3 col-sm-12" id="projectdNav">
+                    <ul>
+                        <li><a href="#">Games</a></li>
+                        <li><a href="#">Misc.</a></li>
+                    </ul>
+                </aside>
+                <section class="col-md-9 col-sm-12" id="projectCards">
+
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="card">
+                                
+                                <img src="https://i.udemycdn.com/course/750x422/695566_74ab_2.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title">RSP Game</h5>
+                                    <p class="card-text">Rock, Paper, Scissors game with sprites, JS logic, and Bootstrap styles</p>
+                                </div>
+                                <div class="card-header">
+                                        Features
+                                    </div>
+                                <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">JavaScript logic</li>
+                                    <li class="list-group-item">Bootstrap 4</li>
+                                    <li class="list-group-item">Sprites</li>
+                                </ul>
+                                <div class="card-body">
+                                    <a href="https://hschaen.github.io/rock-paper-scissors/" class="btn btn-success card-link">Play</a>
+                                    <a href="https://github.com/hschaen/rock-paper-scissors" class="btn btn-warning card-link">Repo</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="project col-sm-6 col-md-4">
-                    <div class="card">
-                        <div class="card-header">
-                            Featured
-                        </div>
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project col-sm-6 col-md-4">
-                    <div class="card">
-                        <div class="card-header">
-                            Featured
-                        </div>
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        </div>
-                        <ul class="list-group list-group-flush">
-                            <li class="list-group-item">Cras justo odio</li>
-                            <li class="list-group-item">Dapibus ac facilisis in</li>
-                            <li class="list-group-item">Vestibulum at eros</li>
-                        </ul>
-                        <div class="card-body">
-                            <a href="#" class="card-link">Card link</a>
-                            <a href="#" class="card-link">Another link</a>
-                        </div>
-                    </div>
-                </div>
+                </section>
             </div>
         </section>
         <section class="row" id="contactForm">
@@ -128,7 +96,7 @@
                 <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/hschaen@gmail.com" method="POST">
                     <fieldset id="fs-frm-inputs">
                         <div class="form-group">
-                        
+                            
                             <label for="full-name">Full Name</label>
                             <input type="texy" class="form-control" id="fullName" placeholder="Your Name" name="name" id="full-name required">
                         
@@ -137,83 +105,64 @@
                             <label for="email-address">Email address</label>
                             <input type="email" class="form-control" id="emailAddress" placeholder="email@domain.tld" name="_replyto" id="email-address" required>
                         </div>
-                    <!-- <div class="form-group">
-                        <label for="exampleFormControlSelect1">Example select</label>
-                        <select class="form-control" id="exampleFormControlSelect1">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div>
-                    <!-- <div class="form-group">
-                        <label for="exampleFormControlSelect2">Example multiple select</label>
-                        <select multiple class="form-control" id="exampleFormControlSelect2">
-                            <option>1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                            <option>5</option>
-                        </select>
-                    </div> -->
                         <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea class="form-control" id="message" rows="3" name="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
-                        </div>
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" rows="3" name="message" placeholder="Aenean lacinia bibendum nulla sed consectetur. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Donec ullamcorper nulla non metus auctor fringilla nullam quis risus." required=""></textarea>
+                            </div>
                     </fieldset>
                     <input type="hidden" name="_subject" id="email-subject" value="hschaen.github.io Contact Form Submission">
                     <input type="submit" class="btn btn-primary mb-2" value="Send">
                 </form>
             </div>
         </section>
-        <footer class="row card-footer">
-            <div class="col-sm-12">
-                <div class="row">
-                    <div class="col-sm-9 text-left">
-                        <div class="py-3" id="siteLogo">
-                            <h1>Harrison Schaen</h1>
+        <footer class="card-footer">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-9 text-left">
+                            <div class="py-3" id="siteLogo">
+                                <h1>Harrison Schaen</h1>
+                            </div>
                         </div>
-                    </div>
-                    
-                    <div class="col-sm-3 text-right d-table-cell">
-                        <div id="socialLinks">
-                            <span class="">Contact Me</span>
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <!-- LinkedIn -->
-                                    <a href="https://linkedin.com/in/harrisonschaen" title="Harrison Schaen on LinkedIn" alt="Harrison Schaen on LinkedIn"><i class="fab fa-linkedin"></i></a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <!-- Twitter -->
-                                    <a href="https://twiiter.com/in/harrisonschaen" title="Harrison Schaen on Twiiter" alt="Harrison Schaen on Twiiter"><i class="fab fa-twitter-square"></i></a>
+                        <div class="col-sm-3 text-right d-table-cell">
+                            <div id="socialLinks">
+                                <span class="">Contact Me</span>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <!-- LinkedIn -->
+                                        <a href="https://linkedin.com/in/harrisonschaen" title="Harrison Schaen on LinkedIn" alt="Harrison Schaen on LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <!-- Twitter -->
+                                        <a href="https://twiiter.com/in/harrisonschaen" title="Harrison Schaen on Twiiter" alt="Harrison Schaen on Twiiter"><i class="fab fa-twitter-square"></i></a>
 
-                                </li>
-                                <li class="list-inline-item">
-                                    <!-- Instagram -->
-                                    <a href="https://instagram.com/in/harrisonschaen" title="Harrison Schaen on Instagram" alt="Harrison Schaen on Instagram"><i class="fab fa-instagram"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <!-- Instagram -->
+                                        <a href="https://instagram.com/in/harrisonschaen" title="Harrison Schaen on Instagram" alt="Harrison Schaen on Instagram"><i class="fab fa-instagram"></i></a>
 
-                                </li>
-                                <li class="list-inline-item">
-                                    <!-- Facebook -->
-                                    <a href="https://fb.me/harrisonschaen" title="Harrison Schaen on Facebook" alt="Harrison Schaen on Facebook"><i class="fab fa-facebook-square"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <!-- Facebook -->
+                                        <a href="https://fb.me/harrisonschaen" title="Harrison Schaen on Facebook" alt="Harrison Schaen on Facebook"><i class="fab fa-facebook-square"></i></a>
 
-                                </li>
-                                <li class="list-inline-item">
-                                    
-                                        <!-- GitHub -->
-                                    <a href="https://github.com/in/hschaen" title="Harrison Schaen on Github" alt="Harrison Schaen on GitHub"><i class="fab fa-github-square"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        
+                                            <!-- GitHub -->
+                                        <a href="https://github.com/in/hschaen" title="Harrison Schaen on Github" alt="Harrison Schaen on GitHub"><i class="fab fa-github-square"></i></a>
 
-                                </li>
-                                <li class="list-inline-item">
-                                    <!-- Email -->
-                                    <a href="https://linkedin.com/in/harrisonschaen" title="Harrison Schaen on Email" alt="Harrison Schaen on Email"><i class="fas fa-envelope"></i></a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <!-- Email -->
+                                        <a href="https://linkedin.com/in/harrisonschaen" title="Harrison Schaen on Email" alt="Harrison Schaen on Email"><i class="fas fa-envelope"></i></a>
 
-                                </li>
-                            </ul>
-                            <div id="copyright">
-                                    <span class="align-middle">&copy; 2019 Harrison Schaen</span>
-                                </div>
+                                    </li>
+                                </ul>
+                                <div id="copyright">
+                                        <span class="align-middle">&copy; 2019 Harrison Schaen</span>
+                                    </div>
+                            </div>
                         </div>
                     </div>
                 </div>
