@@ -10,8 +10,8 @@
 </head>
 <body>
     <!-- Start adding some content -->    
-    <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
             <a class="navbar-brand" href="#">Harrison Schaen</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -19,12 +19,17 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Portfolio <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#portfolio">Portfolio <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 
                 </ul>
             </div>
-        </nav>
+        </div>
+    </nav>
+    <div class="container">
         <main class="row" id="intro">
             <div class="col-sm-12">
                 <div class="jumbotron">
@@ -36,7 +41,7 @@
                 </div>
             </div>
         </main>
-        <section id="projects">
+        <section id="projects"><a name="portfolio"></a>
             <div class="row">
                 <div class="col-sm-12">
                     <header class="col-sm-12" id="projectHeader">
@@ -95,8 +100,8 @@
                                     <p class="card-text">Head to Head battle game built in JS with jQuery and Bootstrap. Choose your hero and your opponent and hit attack until one of you is defeated.</p>
                                 </div>
                                 <div class="card-header">
-                                        Features
-                                    </div>
+                                    Features
+                                </div>
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">JavaScript logic</li>
                                     <li class="list-group-item">Bootstrap 4</li>
@@ -120,12 +125,14 @@
                             <div class="card">
                                 
                                 <img src="http://static-21.sinclairstoryline.com/resources/media/7ec02558-5fad-4cff-8e6c-0c6ed259a7cb-coinflip.png?1446962595094ody">
+                                <div class="card-body">
                                     <h5 class="card-title">Coin Flipper</h5>
                                     <p class="card-text">Flip that coin as many times as you want. Built with Bootstrap, jQuery, HTML, CSS, JS</p>
-                                </div>
+                                </div>    
+                                
                                 <div class="card-header">
-                                        Features
-                                    </div>
+                                    Features
+                                </div>
                                 <ul class="list-group list-group-flush">
                                     <li class="list-group-item">HTML</li>
                                     <li class="list-group-item">CSS</li>
@@ -142,7 +149,9 @@
                 </section>
             </div>
         </section>
-        <section class="row" id="contactForm">
+        <hr>
+        <!-- Contact Me -->
+        <section class="row" id="contactForm"><a name="contact"></a>
             <div class="col-sm-12">
                 <header>
                     <h1>Contact Me</h1>
@@ -169,7 +178,9 @@
                 </form>
             </div>
         </section>
-        <footer class="card-footer">
+    </div>
+    <footer class="card-footer">
+        <div class="container ">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="row">
@@ -221,8 +232,8 @@
                     </div>
                 </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </footer>
     <script type="text/javascript">
         // var name, client,showIt;
         // client = confirm("Do you want to pay for help with a project?");
